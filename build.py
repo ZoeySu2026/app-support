@@ -293,3 +293,8 @@ cards = "\n".join(
 </html>
 """)
 print("  ✓ index.html（總覽）")
+
+# 英文版隱私政策接在中文版同一頁下方
+# （審核員不會去找 /en/，ASC 也只能填一個 URL）
+import en
+print(f"  ✓ 英文版隱私政策 {en.append_all(root, EMAIL)} 支")
