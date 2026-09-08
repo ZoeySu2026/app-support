@@ -7,12 +7,22 @@
 <style>
   :root{color-scheme:light dark}
   body{margin:0;background:#f5f7fb;color:#141821;
-       font:16px/1.7 "Noto Sans TC","PingFang TC",-apple-system,sans-serif}
+       font:16px/1.75 "Noto Sans TC","PingFang TC",-apple-system,sans-serif}
   @media (prefers-color-scheme:dark){body{background:#0f1420;color:#eef1f7}}
-  main{max-width:38rem;margin:0 auto;padding:64px 20px}
-  h1{font-size:1.4rem;margin:0 0 6px;letter-spacing:-.02em}
-  .sub{color:#8b94a8;margin:0 0 32px;font-size:.9rem}
-  a.card{display:block;padding:16px 18px;margin-bottom:10px;text-decoration:none;
+  main{max-width:44rem;margin:0 auto;padding:52px 20px 80px}
+  h1{font-size:1.45rem;letter-spacing:-.02em;margin:0 0 4px}
+  .sub{color:#8b94a8;margin:0 0 34px;font-size:.9rem}
+  h2{font-size:1.02rem;margin:30px 0 6px;font-weight:700}
+  p,li{margin:0 0 10px}
+  ul{padding-left:1.2rem}
+  a{color:#0a66c2}
+  @media (prefers-color-scheme:dark){a{color:#7cc0ff}}
+  strong{font-weight:700}
+  footer{margin-top:52px;padding-top:18px;border-top:1px solid rgba(139,148,168,.3);
+         font-size:.85rem;color:#8b94a8}
+  footer a{margin-right:14px}
+
+  a.card{display:block;padding:15px 17px;margin-bottom:9px;text-decoration:none;
          border:1px solid rgba(139,148,168,.3);border-radius:8px;color:inherit}
   a.card:hover{border-color:#8b94a8}
   a.card b{display:block;font-size:1.02rem;margin-bottom:2px}
@@ -22,8 +32,13 @@
 <body>
 <main>
   <h1>App 支援</h1>
-  <p class="sub">有問題歡迎來信 zoey.meala@gmail.com</p>
-  <a class="card" href="wordrun/"><b>篝火町・單字快跑</b><span>支援與常見問題・隱私政策</span></a>
+  <p class="sub">有問題歡迎來信 <a href="mailto:zoey.meala@gmail.com">zoey.meala@gmail.com</a></p>
+  <a class="card" href="wordrun/"><b>篝火町・單字快跑</b><span>邊跑邊背單字的 3D 跑酷</span></a>
+  <a class="card" href="forklift/"><b>堆高機特訓</b><span>堆高機操作單一級技術士學科練習</span></a>
+  <a class="card" href="quitcat/"><b>少一杯</b><span>手搖飲少一杯，先看見自己喝了多少</span></a>
+  <a class="card" href="slate/"><b>開拍 Slate</b><span>會跟著你唸稿的提詞器相機</span></a>
+  <a class="card" href="medalarm/"><b>藥定 MedAlarm</b><span>吃藥提醒與回診前的一頁摘要</span></a>
+  <a class="card" href="crane/"><b>起重機特訓</b><span>固定式起重機操作單一級技術士學科練習</span></a>
 </main>
 </body>
 </html>
