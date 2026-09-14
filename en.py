@@ -113,6 +113,27 @@ APPS = {
 }
 APPS["crane"] = dict(APPS["forklift"], name="Overhead Crane Operator Exam Prep")
 
+APPS["poste"] = {
+    "name": "Posté",
+    "sections": [
+        ("Photo library",
+         "<p>The app reads only the photos and videos <strong>you pick</strong>, and writes your results, "
+         "stickers and videos back to your library when you choose to save. It never scans the rest of your library.</p>"),
+        ("Date and location in photo metadata (EXIF)",
+         "<p>Used to pre-fill the place, date and time on your artwork. Coordinates are converted to a place name "
+         "through <strong>Apple's on-device geocoding service</strong>, an iOS system feature. Posté has no servers "
+         "of its own and never stores or transmits coordinates. You can edit or clear these texts in the editor.</p>"),
+        ("Motion sensors",
+         "<p>Tilting the phone moves the light on the glass. Used live on device, never stored.</p>"),
+        ("Data kept on your device",
+         "<p>Drafts, works, passport stamps and preferences live in the app's sandbox. Deleting the app deletes them; "
+         "you can also delete works and stamps individually inside the app.</p>"),
+        ("Payments",
+         "<p>This version is completely free. No in-app purchases, no subscriptions, no ads. If paid features are "
+         "added later, purchases are handled by the Apple App Store and we never receive your payment details.</p>"),
+    ],
+}
+
 
 def _tail(email):
     return (
