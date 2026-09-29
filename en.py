@@ -20,6 +20,49 @@ COMMON_HEAD = """  <h2>In short</h2>
   </ul>"""
 
 APPS = {
+    "wordparty": {
+        "name": "Word Party",
+        "updated": "September 29, 2026",
+        "full": """  <h2>In short</h2>
+  <p>Word Party has <strong>no accounts, no ads and no tracking</strong>. To let you play live against other players,
+  the app sends a <strong>randomly generated device code</strong>, the <strong>nickname</strong> you choose and your
+  <strong>answers</strong> to our game server. The words you save stay on your phone.</p>
+
+  <h2>Data sent to the game server</h2>
+  <ul>
+    <li><strong>Random device code</strong>, created on your phone the first time you open the app, used to recognise matches from the same phone. It is not Apple's advertising identifier and cannot be used to identify you.</li>
+    <li><strong>Nickname and chosen character</strong>, shown to the other players in your match.</li>
+    <li><strong>Answers and scores</strong>: which option you picked, how long you took, your points and rank, used for live scoring and the results screen.</li>
+    <li><strong>A list of words you often miss</strong> (up to 50), used only to choose questions for that match and <strong>not stored</strong>.</li>
+  </ul>
+  <p>The server may keep the device code, nickname and match results for scoring, rankings and abuse prevention, for no longer than 12 months.</p>
+
+  <h2>Data that stays on your phone</h2>
+  <p>Your saved words and their right/wrong counts, nickname, character, XP, language and theme settings, and cached pronunciations. None of this is uploaded; deleting the app removes it.</p>
+
+  <h2>Third-party services</h2>
+  <ul>
+    <li>The game server is hosted by Railway.</li>
+    <li>The server uses Sentry to record program errors. Error reports may include technical connection details such as an IP address and are used only for debugging.</li>
+    <li>For pronunciation, the app looks up the English word on the public dictionary service dictionaryapi.dev and falls back to the iPhone's built-in voice. Only the word itself is sent.</li>
+  </ul>
+  <p>The app uses no advertising or analytics SDKs, does not track you across other apps or websites, and does not sell or share data.</p>
+
+  <h2>What other players see</h2>
+  <p>Players in the same match see your nickname, character, answer status (answered, right or wrong) and score. Nicknames pass a profanity filter.</p>
+
+  <h2>Deleting your data</h2>
+  <p>Deleting the app removes everything on your phone. To delete match records on the server, email us the nickname you used and roughly when you played; we will handle it within 7 days.</p>
+
+  <h2>Children</h2>
+  <p>The app is rated 4+ and asks for no contact information. Parents with questions about a child's data can email us and we will help delete it.</p>
+
+  <h2>Changes to this policy</h2>
+  <p>If this policy changes, this page and the date above will be updated.</p>
+
+  <h2>Contact</h2>
+  <p>Developer: Yi-Jou Su &middot; Email <a href="mailto:zoey.meala@gmail.com">zoey.meala@gmail.com</a></p>""",
+    },
     "wordrun": {
         "name": "Campfire Town &middot; Word Runner",
         "sections": [
@@ -154,9 +197,13 @@ def block(slug, email):
         '  <hr style="margin:44px 0 30px;border:0;border-top:1px solid rgba(139,148,168,.3)">',
         '  <p style="color:#8b94a8;font-size:.85rem;margin:0 0 20px">English version</p>',
         '  <h1 style="font-size:1.35rem;margin:0 0 4px">Privacy Policy</h1>',
-        f'  <p class="sub">{app["name"]} &middot; Last updated: September 2026</p>',
-        COMMON_HEAD,
+        f'  <p class="sub">{app["name"]} &middot; Last updated: {app.get("updated", "September 2026")}</p>',
     ]
+    if app.get("full"):
+        # 有自己完整政策的 App（例如單字派對有連線對戰，不能套用「完全不收集」的共通開頭）
+        parts.append(app["full"])
+        return "\n\n".join(parts)
+    parts.append(COMMON_HEAD)
     for heading, body in app["sections"]:
         parts.append(f"  <h2>{heading}</h2>\n{body}")
     parts.append(_tail(email))
