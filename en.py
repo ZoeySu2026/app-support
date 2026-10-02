@@ -178,6 +178,31 @@ APPS["poste"] = {
 }
 
 
+APPS["wrapt"] = {
+    "name": "Wrapt",
+    "updated": "October 2026",
+    "sections": [
+        ("Photo library",
+         "<p>The app reads only the photos and videos <strong>you pick</strong>, and writes your work back to your "
+         "library only when you tap save. It never scans the rest of your library.</p>"),
+        ("Photo and video processing",
+         "<p>Finding the subject (people, pets, food and more) uses Apple's built-in Vision framework and runs "
+         "<strong>entirely on your device</strong>. Your photos, videos and analysis results never leave your phone "
+         "and we cannot access them.</p>"),
+        ("Font downloads",
+         "<p>Some fonts are downloaded from Apple's font service, an iOS system feature. No photos, text or personal "
+         "data are sent with that request.</p>"),
+        ("Data kept on your device",
+         "<p>Your text, preferences and saved styles live in the app's sandbox. Deleting the app deletes them.</p>"),
+        ("Purchases and subscriptions",
+         "<p>Wrapt Pro is offered as a one-time purchase, a monthly subscription or a yearly subscription, all processed "
+         "by the <strong>Apple App Store</strong>. We never receive your name, card or payment details — only Apple's "
+         "verification of whether Pro has been purchased. Subscriptions renew automatically and can be cancelled any "
+         "time in iPhone Settings &rarr; your name &rarr; Subscriptions.</p>"),
+    ],
+}
+
+
 def _tail(email):
     return (
         "  <h2>Children</h2>\n"
