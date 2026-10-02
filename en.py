@@ -195,7 +195,7 @@ APPS["wrapt"] = {
         ("Data kept on your device",
          "<p>Your text, preferences and saved styles live in the app's sandbox. Deleting the app deletes them.</p>"),
         ("Purchases and subscriptions",
-         "<p>Wrapt Pro is offered as a one-time purchase, a monthly subscription or a yearly subscription, all processed "
+         "<p>Wrapt Pro is offered as a one-time purchase, a monthly subscription or a 3-month subscription, all processed "
          "by the <strong>Apple App Store</strong>. We never receive your name, card or payment details — only Apple's "
          "verification of whether Pro has been purchased. Subscriptions renew automatically and can be cancelled any "
          "time in iPhone Settings &rarr; your name &rarr; Subscriptions.</p>"),
