@@ -203,6 +203,34 @@ APPS["wrapt"] = {
 }
 
 
+APPS["fenpai"] = {
+    "name": "Sortcam",
+    "updated": "October 2026",
+    "sections": [
+        ("Camera and microphone",
+         "<p>The camera is used to take photos and videos. The microphone is used only while <strong>recording video</strong>. "
+         "Everything you capture stays on your phone.</p>"),
+        ("Location",
+         "<p>Only cameras where you turn on “Record location” (such as Travel) read your location at the moment you shoot, "
+         "to sort photos by place. Locations stay on your phone. Turning coordinates into place names uses Apple's map "
+         "service (an iOS feature); no photos are sent.</p>"),
+        ("Text recognition",
+         "<p>Reading receipt totals and searching text in photos use Apple's built-in Vision framework and run "
+         "<strong>entirely on your device</strong>.</p>"),
+        ("Photos app",
+         "<p>The app accesses the Photos app only when you save to Photos, turn on “Also save to Photos”, or pick photos to add. "
+         "It never scans your library.</p>"),
+        ("Backups",
+         "<p>A backup is a folder you save yourself in the Files app, wherever you choose. We have no servers and cannot see it.</p>"),
+        ("Purchases and subscriptions",
+         "<p>Sortcam Pro is offered as a monthly subscription, a 3-month subscription or a lifetime purchase, all processed by "
+         "the <strong>Apple App Store</strong>. We never receive your name, card or payment details — only Apple's verification "
+         "of whether Pro has been purchased. Subscriptions renew automatically and can be cancelled any time in iPhone "
+         "Settings &rarr; your name &rarr; Subscriptions.</p>"),
+    ],
+}
+
+
 def _tail(email):
     return (
         "  <h2>Children</h2>\n"
