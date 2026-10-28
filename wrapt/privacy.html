@@ -34,7 +34,7 @@
   <ul>
     <li>不需要註冊，也沒有登入功能</li>
     <li>不收集姓名、電子郵件、電話或任何聯絡資訊</li>
-    <li>不收集位置或通訊錄</li>
+    <li>不收集位置或通訊錄（照片的拍攝地點只用來顯示國家名稱，我們收不到，見下方「旅行範本」）</li>
     <li>不使用第三方分析或廣告 SDK，App 內沒有任何廣告</li>
     <li>不使用廣告識別碼（IDFA），不跨 App 或網站追蹤你</li>
     <li>不追蹤你，也不會把資料提供給其他公司</li>
@@ -45,6 +45,9 @@
 
   <h2>照片與影片的處理</h2>
 <p>辨識主角輪廓（人物、寵物、食物等）使用 Apple 內建的 Vision 框架，<strong>完全在裝置上</strong>運算。照片、影片與分析結果都不會離開你的手機，我們也看不到。</p>
+
+  <h2>旅行範本與拍攝地點</h2>
+<p>從 2.0 版起，部分旅行範本會讀取你選的照片裡的拍攝地點（若照片有記錄），交給 Apple 的地圖服務換成國家名稱（例如「JAPAN」），自動填進文字。這是 iOS 系統功能，<strong>不經過我們的伺服器</strong>；我們不會收到、儲存或分享任何位置資訊，匿名統計也不包含位置。照片沒有拍攝地點時就不會做這件事。</p>
 
   <h2>字體下載</h2>
 <p>部分字體由 Apple 的字型服務提供下載，這是 iOS 系統功能；下載時不會附帶你的照片、文字或任何個人資料。</p>
@@ -89,11 +92,14 @@
   <ul>
     <li>No sign-up and no login</li>
     <li>No name, email, phone number or any contact information</li>
-    <li>No location and no contacts</li>
+    <li>No location and no contacts (a photo's capture location is only used to show a country name and never reaches us — see “Travel templates” below)</li>
     <li>No third-party analytics or advertising SDKs, and no ads inside the app</li>
     <li>We do not track you and we do not share data with anyone</li>
     <li>No advertising identifier (IDFA) and no tracking across apps or websites</li>
   </ul>
+
+  <h2>Travel templates and photo location</h2>
+<p>Starting with version 2.0, some travel templates read the capture location stored in the photo you pick (if any) and pass it to Apple's map service to get a country name (such as “JAPAN”), which is filled into the text. This is an iOS system feature and <strong>does not go through our servers</strong>; we never receive, store or share any location data, and the anonymous statistics contain no location. Photos without a capture location are left alone.</p>
 
   <h2>Anonymous usage statistics (from version 1.1)</h2>
 <p>To learn which features work and where people get stuck, the app sends anonymous events to our own server (Cloudflare):</p>
