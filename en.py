@@ -160,11 +160,11 @@ APPS["poste"] = {
     "name": "Posté",
     "sections": [
         ("Photo library",
-         "<p>The app reads only the photos and videos <strong>you pick</strong>, and writes your results, "
-         "stickers and videos back to your library when you choose to save. It never scans the rest of your library.</p>"),
+         "<p>Through the system photo picker the app reads only the photos and videos <strong>you pick</strong>. "
+         "Saving asks only for “Add Photos” access; the app never reads or scans the rest of your library.</p>"),
         ("Date and location in photo metadata (EXIF)",
          "<p>Used to pre-fill the place, date and time on your artwork. Coordinates are converted to a place name "
-         "through <strong>Apple's on-device geocoding service</strong>, an iOS system feature. Posté has no servers "
+         "through <strong>Apple's geocoding service</strong>, an iOS system feature. Posté has no servers "
          "of its own and never stores or transmits coordinates. You can edit or clear these texts in the editor.</p>"),
         ("Motion sensors",
          "<p>Tilting the phone moves the light on the glass. Used live on device, never stored.</p>"),
