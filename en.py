@@ -163,17 +163,18 @@ APPS["poste"] = {
          "<p>Through the system photo picker the app reads only the photos and videos <strong>you pick</strong>. "
          "Saving asks only for “Add Photos” access; the app never reads or scans the rest of your library.</p>"),
         ("Date and location in photo metadata (EXIF)",
-         "<p>Used to pre-fill the place, date and time on your artwork. Coordinates are converted to a place name "
+         "<p>Used to name your works automatically (place or date). Coordinates are converted to a place name "
          "through <strong>Apple's geocoding service</strong>, an iOS system feature. Posté has no servers "
-         "of its own and never stores or transmits coordinates. You can edit or clear these texts in the editor.</p>"),
+         "of its own and never stores or transmits coordinates. You can rename works anytime.</p>"),
         ("Motion sensors",
          "<p>Tilting the phone moves the light on the glass. Used live on device, never stored.</p>"),
         ("Data kept on your device",
-         "<p>Drafts, works, passport stamps and preferences live in the app's sandbox. Deleting the app deletes them; "
-         "you can also delete works and stamps individually inside the app.</p>"),
-        ("Payments",
-         "<p>This version is completely free. No in-app purchases, no subscriptions, no ads. If paid features are "
-         "added later, purchases are handled by the Apple App Store and we never receive your payment details.</p>"),
+         "<p>Drafts, works and preferences live in the app's sandbox. Deleting the app deletes them; "
+         "you can also delete works individually inside the app.</p>"),
+        ("Payments and subscriptions",
+         "<p>Posté Pro is offered as a monthly or quarterly auto-renewing subscription or a one-time lifetime purchase. "
+         "All payments are handled by the <strong>Apple App Store</strong>; we never receive your name, card or payment details — "
+         "only Apple's confirmation of whether a purchase is active. Cancel anytime in Settings › your name › Subscriptions. No ads.</p>"),
     ],
 }
 
