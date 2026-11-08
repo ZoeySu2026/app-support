@@ -232,6 +232,33 @@ APPS["fenpai"] = {
 }
 
 
+APPS["zhuzi"] = {
+    "name": "The Pets in My Photos",
+    "updated": "November 2026",
+    "sections": [
+        ("Photo library",
+         "<p>The app asks for read and write access to Photos. <strong>Reading</strong> is used only to find photos "
+         "with animals in them. <strong>Writing</strong> happens only when you tap save on an image you made, or when "
+         "you choose sample mode (which saves 16 sample photos into an album named “相簿裡的毛孩們範例” that you can delete).</p>"),
+        ("Photo analysis",
+         "<p>Animal detection, subject cut-outs, classification and picking the best shots use Apple's built-in Vision "
+         "framework and run <strong>entirely on your device</strong>. Photos and analysis results never leave your phone. "
+         "The app has no servers and we cannot see your photos.</p>"),
+        ("Camera and microphone (optional)",
+         "<p>The camera is used only in the Pet Camera. The microphone is used only to record you calling your pet's name, "
+         "played back to get its attention. Both are optional and recordings stay on your phone.</p>"),
+        ("Notifications",
+         "<p>Birthday and year-review reminders are local notifications scheduled on your phone; no server is involved.</p>"),
+        ("Data kept on your device",
+         "<p>Scan results, pet names, the dex and settings are stored only in the app's sandbox and in a shared App Group "
+         "container used by the widget. Deleting the app deletes them. If you use iCloud or computer backups, iOS backups "
+         "may include this app data according to your own backup settings.</p>"),
+        ("Payments",
+         "<p>Version 1.0 has no in-app purchases, no subscriptions and no ads.</p>"),
+    ],
+}
+
+
 def _tail(email):
     return (
         "  <h2>Children</h2>\n"
